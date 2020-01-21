@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">PR6</string>
+
+    <string name="btnEditar">Editar</string>
+
+    <string name="toastEditado">¡Persona editada!</string>
+
+</resources>

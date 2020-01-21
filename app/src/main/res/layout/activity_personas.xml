@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personas">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="210dp"
+                android:layout_height="240dp"
+                app:srcCompat="@drawable/panch" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="210dp"
+                android:layout_height="240dp"
+                app:srcCompat="@drawable/yodaaaa" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="210dp"
+                android:layout_height="240dp"
+                app:srcCompat="@drawable/jasonstaham" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="210dp"
+                android:layout_height="240dp"
+                app:srcCompat="@drawable/anakin" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="210dp"
+                android:layout_height="240dp"
+                app:srcCompat="@drawable/kiryu" />
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="210dp"
+                android:layout_height="240dp"
+                app:srcCompat="@drawable/boysmokingcordoba" />
+        </TableRow>
+
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="388dp"
+        android:layout_height="208dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
