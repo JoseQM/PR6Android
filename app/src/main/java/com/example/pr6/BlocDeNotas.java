@@ -28,7 +28,6 @@ public class BlocDeNotas extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloc_de_notas);
-        setTitle("Bloc de Notas");
 
         txtBloc = findViewById(R.id.txtBloc);
 
@@ -54,11 +53,10 @@ public class BlocDeNotas extends AppCompatActivity
     {
         switch (item.getItemId())
         {
-            case R.id.opcion1:
+            case R.id.opcion:
 
                 texto = txtBloc.getText().toString();
 
-                SharedPreferences prefs;
                 prefs = getSharedPreferences("ficheroblocdenotas", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = prefs.edit();
 
@@ -66,7 +64,6 @@ public class BlocDeNotas extends AppCompatActivity
                 editor.commit();
 
                 Toast.makeText(getApplicationContext(), "Texto guardado", Toast.LENGTH_LONG).show();
-
                 break;
         }
         return true;

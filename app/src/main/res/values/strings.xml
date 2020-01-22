@@ -6,4 +6,8 @@
 
     <string name="toastEditado">¡Persona editada!</string>
 
+    <string name="tituloBloc">Bloc de Notas</string>
+    <string name="tituloPersonas">Personas</string>
+    <string name="tituloEdicion">Edición Persona</string>
+
 </resources>

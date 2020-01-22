@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EdicionPersona"></activity>
-        <activity android:name=".BlocDeNotas" />
-        <activity android:name=".Personas" />
+        <activity android:name=".EdicionPersona" android:label="@string/tituloEdicion"/>
+        <activity android:name=".BlocDeNotas" android:label="@string/tituloBloc"/>
+        <activity android:name=".Personas" android:label="@string/tituloPersonas" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

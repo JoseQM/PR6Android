@@ -3,7 +3,6 @@ package com.example.pr6;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,7 +17,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import static android.Manifest.permission.CALL_PHONE;
 
@@ -57,8 +55,11 @@ public class Personas extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personas);
+
+        //save();
 
         img1 = findViewById(R.id.img1);
         img2 = findViewById(R.id.img2);
@@ -75,24 +76,6 @@ public class Personas extends AppCompatActivity
         registerForContextMenu(img4);
         registerForContextMenu(img5);
         registerForContextMenu(img6);
-
-
-        /*btnEdit.setOnClickListener(new Button.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-
-                correito = txtCorreo.getText().toString();
-                numerito = txtNumero.getText().toString();
-
-                prefs = getSharedPreferences("ficheroconfiguracion", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = prefs.edit();
-
-                editor.putString("numTelefono1", "tel:"+numerito);
-                editor.putString("correoElectronico1", correito);
-            }
-        });*/
     }
 
 

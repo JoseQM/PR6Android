@@ -27,7 +27,6 @@ public class EdicionPersona extends AppCompatActivity
 
     SharedPreferences prefs;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -62,7 +61,6 @@ public class EdicionPersona extends AppCompatActivity
                 txtNumero.setText("");
 
                 finish();
-
             }
         });
     }
