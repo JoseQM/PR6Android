@@ -41,7 +41,6 @@ public class Personas extends AppCompatActivity
     Fragment fragmentoEdit;
     Fragment frag;
 
-
     EditText txtCorreo;
     EditText txtNumero;
     Button btnEdit;
@@ -77,6 +76,7 @@ public class Personas extends AppCompatActivity
         registerForContextMenu(img5);
         registerForContextMenu(img6);
 
+
         /*btnEdit.setOnClickListener(new Button.OnClickListener()
         {
             @Override
@@ -100,7 +100,6 @@ public class Personas extends AppCompatActivity
     {
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater inflater = getMenuInflater();
-
 
 
         if(v.getId() == R.id.img1)
